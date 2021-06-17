@@ -18,14 +18,25 @@
             <h5>Contact - thangnh0511@gmail.com</h5>
         </div>
     </div> -->
+
+
     <div id="all-page">
-        <div id="resume-btn display-off">
-            <span>Résumé</span>
-        </div>
+        <!--------------- Resume button ------------>
+        <a href="https://drive.google.com/file/d/1LFB-vjGZHsnJalJ64sRhmlW2N_QcGq0u/view">
+            <div id="resume-btn" class="display-on">
+                <span>Résumé</span>
+            </div>
+        </a>
+        
+        <!-------------End button------------->
+
+    <!---------------- header ------------------->
         <header>
             <div class="content-area">
                 <span id="logo">
-                    <img src="assets/imgs/logo-5.png" alt="">
+                    <a href="#" target="_self">
+                        <img src="assets/imgs/logo-5.png" alt="home">
+                    </a>
                 </span>
                 <nav>
                     <ul>
@@ -35,35 +46,66 @@
                         </li>
                         <li>
                             <div class="nav-underline"></div>
-                            <a href="#proj">Projects</a>
+                            <a href="#projects">Projects</a>
                         </li>
                         <li>
                             <div class="nav-underline"></div>
-                            <a href="#achi">Achievements</a>
+                            <a href="#achievement">Achievements</a>
                         </li>
                         <li>
                             <div class="nav-underline"></div>
-                            <a href="#cont">Contact </a> 
+                            <a href="#contact">Contact </a> 
                             </div>  
                         </li>
                     </ul>
                 </nav>
-            </div>
+            
+        </header>
+        <!------------ End header ------------->
+
+        <!----------------- Container ------------------>
             <div id="container">
                 <section id="hello">
-                    <h1>Hello</h1>
+                    <!-- <h1>Hello</h1> -->
+                    <div class="content">
+                        <div class="left">
+                            <h1>Hello there!</h1>
+                            <h1>I'm Nguyen Huu Thang</h1>
+                            <p>A <b>Junior Business Analyst</b>, who is competent at solving issue and building solution. My background in Economics, Technique and Creative thinking.</p>
+                            <div>
+                                <button name="button" value="ok" type="button" onclick="hello()" class="about-me-btn">ABOUT ME</button>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="assets/imgs/Profile-photo-back-3.png" alt=""
+                            id="back">
+                            <img src="assets/imgs/Profile-photo-front-4.png" alt="" id="front">
+                        </div>
+                        
+                    </div>
                 </section>
-                <section id="proj">
+                <section id="projects">
                     <h1>Projects</h1>
+                    <div class="content">
+                        <img src="assets/imgs/loading-2.gif" alt="" class="contruct-notify">
+                    </div>
                 </section>
-                <section id="achi">
+                <section id="achievement">
                     <h1>Achievements</h1>
+                    <div class="content">
+                        <img src="assets/imgs/loading-2.gif" alt="" class="contruct-notify">
+                    </div>
                 </section>
-                <section id="cont">
+                <section id="contact">
                     <h1>Contact</h1>
+                    <div class="content">
+                        <img src="assets/imgs/loading-2.gif" alt="" class="contruct-notify">
+                    </div>
                 </section>
             </div>
-            
+            <!--------------------- END CONTAINER ------------------>
+
+            <!--------------------- FOOTER ------------------------->
             <footer>
                 <div class="content-area">
                     <div class="footer-area">
@@ -71,6 +113,11 @@
                     </div>
                 </div>
             </footer>
-        </header>
+        </div>
+        <script>  
+            function hello(){  
+              alert("Working with passion for making business innovations, being fond of creating the valuable and feasible products and having nearly 2 years of professional experience on working with organizations that need to improve their business process. Being competent at solving issues and buildingsolutions. Having the ability to self-study and actively seek out new knowledge and actively develop skills and approaches that help me to do better job and build a career in Business Analytics");  
+            }  
+          </script>
 </body>
 </html>

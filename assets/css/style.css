@@ -1,0 +1,161 @@
+.color-1 {color: #fef6ef;}
+.color-2 {color:#f37239}
+.color-3 {color:#6eb5ca}
+.color-4 {color:#b8d8e0}
+.color-5 {color:#525252}
+
+/* #all-page {width: 100%; min-height: 400px; background-color: #fef6ef;} */
+
+body {background-color: #fef6ef;}
+
+footer {width: 100%; height: 50px; font-size: 100px; background-color: #414042 ; position: fixed; bottom: 0;}
+
+/* #document {width: 100%; height: 100%;}
+#opps{width: 500px; height: 500px; margin: auto;margin-top: 200px; color:#6EB5CA; text-align: center; }
+#opps img { width: 400px;} */
+
+.display-on {display: block;}
+.display-off { display: none;}
+
+/* ----------Resume - button --------------- */
+
+#resume-btn {width: 100px; height: 40px; font-size: 16px; font-weight: bold ;line-height: 40px;color:#fef6ef; background-color: #414042; text-align: center; border-top-left-radius: 10px; border-bottom-left-radius: 10px; position: fixed; top: 5px; right: 0; z-index: 1;}
+
+
+/* --------------- Content- area ----------- */
+
+.content-area {width: 76.9%; min-height: 50px; margin: auto;}
+
+/* --------------- Header ------------------ */
+
+header{width: 100%; height: 50px;font-size: 100px; background: #b8d8e0; position: fixed; top: 0;}
+
+#logo {width: 40px; position: absolute; margin-top: 4px; left: 20px;}
+#logo img {width: 150px; float: left;}
+
+nav{width: 500px;height: 50px; margin: auto;} 
+
+
+/*---- Thẻ <a> ---- */
+/* nav a {padding: 0px 10px 0px 2px; color: #525252; position: relative;} */
+
+/* nav a:before {content: ""; position: absolute;background-color: #e74c3c;transition: .25s;}
+
+nav a:hover:before {width: 100%;} */
+
+/* ---- end thẻ <a> ---- */
+
+/* nav ul li:hover a {border-bottom: 5px solid #6eb5ca; width: 100%;} */
+
+nav ul li {width: 125px; height: 50px; line-height: 50px; text-align: center;float:left; font-size: 14px; font-weight: bold; transition: width 1s;}
+
+a {
+    font-size: 14px;
+    color: #525252;
+    position: relative;
+    padding: 0 10px 0 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  a:before, a:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border-bottom: 5px solid #f37239;
+    /* background-color: #f37239; */
+  }
+  a:before {
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  }
+  a:after {
+    opacity: 0;
+    transform: translateY(4px);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  }
+  a:hover:before, a:hover:after, a:focus:before, a:focus:after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  a:hover:before, a:focus:before {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  }
+  a:hover:after, a:focus:after {
+    transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+  }
+/* --------------- Container --------------- */
+#container {width: 76.9%; min-height: 160px; background-color: #6EB5CA; margin: auto; padding-top: 50px;}
+
+section {width: 100%; height: 1000px;padding: 50px; font-size: 100px; background-color: #6EB5CA ;} 
+
+article {width: 100%; height: 1000px;padding: 50px; font-size: 100px; background-color: #B8D8E0 ;} 
+
+
+/* ------- ADDITION CSS -------- */
+
+h2 {
+    display: block;
+    color: black;
+    font-weight: bold;
+    position: relative;
+  }
+  h2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #e74c3c;
+    transition: .25s;
+  }
+  h2:hover:before {
+    width: 100%;
+  }
+
+.link {
+    display: block;
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+
+.link:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 50%;
+    bottom: 0;
+    background-color: blueviolet;
+    transition: .5s;
+  }
+.link:hover:before {
+    width: 200px;
+    color:white;
+  }
+
+
+.test-1 {
+    width: 200px; height: 50px;
+    position: relative;
+}
+.text {position: fixed; color: brown; z-index: 1;}
+.test-2 { width: 200px; height: 50px;}
+.test-2 {color: black; position: relative; background: blueviolet;}
+
+.test-2::after {content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 50%;
+    bottom: 0;
+    background-color: #e74c3c;
+    transition: .5s;}
+
+    .test-2:hover::after {width: 200px;
+    color:white;}

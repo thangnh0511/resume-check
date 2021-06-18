@@ -36,7 +36,10 @@ body {background-color: #fef6ef;}
 
 /* --------------- Content- area ----------- */
 
-.content-area {width: 76.9%; min-height: 50px; margin: auto;}
+.content-area {
+  width: 76.9%; 
+  min-height: 50px; 
+  margin: auto;}
 
 /* --------------- Header ------------------ */
 
@@ -139,8 +142,8 @@ p{text-align: center; line-height: 50px;}
 
 /* ----------------- CONTENT ---------------------- */
 
-.content {width: 90%; min-height: 200px; padding: 20px 50px; margin: auto; float: left;}
-.contruct-notify {width: 300px;margin-left: 39%;}
+/* .content {width: 90%; min-height: 200px; padding: 20px 50px; margin: auto; float: left;}
+.contruct-notify {width: 300px;margin-left: 39%;} */
 
 /* ------- ADDITION CSS -------- */
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset-css.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="shortcut icon" type="image/png" href="assets/imgs/re-favicon.png"/>
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <title>Huu Thang Nguyen</title>
@@ -20,10 +21,10 @@
     </div> -->
 
 
-    <div id="all-page">
+    <div id="row">
         <!--------------- Resume button ------------>
         <a href="https://drive.google.com/file/d/1LFB-vjGZHsnJalJ64sRhmlW2N_QcGq0u/view">
-            <div id="resume-btn" class="display-on">
+            <div id="resume-btn">
                 <span>Résumé</span>
             </div>
         </a>
@@ -38,7 +39,7 @@
                         <img src="assets/imgs/logo-5.png" alt="home">
                     </a>
                 </span>
-                <nav>
+                <nav class="display">
                     <ul>
                         <li>
                             <div class="nav-underline"></div>
@@ -64,11 +65,13 @@
         <!------------ End header ------------->
 
         <!----------------- Container ------------------>
-            <div id="container">
+            <div id="container row">
                 <section id="hello">
                     <!-- <h1>Hello</h1> -->
-                    <div class="content">
-                        <div class="left">
+                    <!-- <div class="content"> -->
+                    <div class="col-m-12">    
+                        <!-- <div class="left"> -->
+                        <div class="left left-sm left-t">
                             <h1>Hello there!</h1>
                             <h1>I'm Nguyen Huu Thang</h1>
                             <p>A <b>Junior Business Analyst</b>, who is competent at solving issue and building solution. My background in Economics, Technique and Creative thinking.</p>
@@ -76,7 +79,7 @@
                                 <button name="button" value="ok" type="button" onclick="hello()" class="about-me-btn">ABOUT ME</button>
                             </div>
                         </div>
-                        <div class="right">
+                        <div class="right right-sm right-t">
                             <img src="assets/imgs/Profile-photo-back-3.png" alt=""
                             id="back">
                             <img src="assets/imgs/Profile-photo-front-4.png" alt="" id="front">

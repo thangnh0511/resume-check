@@ -98,9 +98,13 @@
     #logo a img {width: 130px; float: left; transition: .25s;}
     /* #logo a img:hover { width: 140px;} */
 
-    .content-sm {width: 100%; min-height: 100px; float:left; padding: 20px 0px;  margin-top: 30px;}
+    .content-sm {width: 100%; min-height: 100px; float:left; padding: 20px 0px;  margin-top: 30px;box-sizing: border-box;}
     .content-sm h1{font-size:30px; color: #525252; text-align: left; line-height: auto; padding: 0px 0px 0px 0px ;}
     .content-sm p {font-size: 18px; color: #525252; text-align: left; line-height: 25px; padding: 0px 5px 0px 5px ; margin-top: 40px;}
+    .content-sm .construction {width: 70%; min-height: 100px; background-color: #414042 ; border-radius: 15px; margin: auto; padding: 30px;}
+    .content-sm .construction p {color: #fef6ef ; text-align: justify; font-size: 16px; line-height: 30px;}
+    .content-sm .construction i {margin-left: 35%;}
+    .content-sm .construction:hover {box-shadow: 0px 5px 5px 5px rgb(110,181,202,.5);}
     
 } 
 
@@ -122,9 +126,14 @@
     .right-m {min-height: 500px;}
     #hello-there {font-size:30px; color: #525252; text-align: left; margin-bottom: -15px;}
 
-    .content-m {width: 100%; min-height: 100px; float:left; padding: 20px 0px;  margin-top: 30px;}
+    .content-m {width: 100%; min-height: 100px; float:left; padding: 20px 0px;  margin-top: 30px;box-sizing: border-box;}
     .content-m h1{font-size:30px; color: #525252; text-align: left; line-height: auto; padding: 0px 0px 0px 0px ;}
     .content-m p {font-size: 18px; color: #525252; text-align: left; line-height: 25px; padding: 0px 5px 0px 5px ; margin-top: 40px;}
+    .content-m .construction {width: 70%; min-height: 100px; background-color: #414042 ; border-radius: 15px; margin: auto; padding: 30px;}
+    .content-m .construction p {color: #fef6ef ; text-align: center; font-size: 20px; line-height: 30px;}
+    .content-m .construction i {margin-left: 42%;}
+    .content-m .construction:hover {box-shadow: 0px 5px 5px 5px rgb(110,181,202,.5);}
+
 
     .nav-display {display: none;}
     .navsm {display: block;}
@@ -155,7 +164,7 @@
     .about-me-btn {width: 100px; height: 50px; border-radius: 5px; background-color: rgba(82, 82, 82, 1); margin: auto; color: #fef6ef; font-weight: bolder; border-style: none; margin-top: 40px;}
     .about-me-btn:hover {background-color: #6eb5ca; color: #fef6ef;}
 
-    .right-t {width: 44%; min-height: 100px; margin-left: 0.5em; margin-top: 60px; float: left; position: relative;}
+    .right-t {width: 44%; min-height: 100px; margin-left: 0.5em; margin-top: 60px; float: left; position: relative; }
     .right-t #back {width: 500px; position: absolute;left: -40px; top: 10px; z-index: 0;
                   animation-name: header-profile-1-sm; animation-duration: 2s;}
     .right-t #front {width: 600px; position: absolute;left: -45px; animation-name: header-profile-2-sm; animation-duration: 2s;} 
@@ -174,9 +183,13 @@
       #logo {width: 40px; position: absolute; margin-top: 7px; left: 15px;}
       #logo a img {width: 130px; float: left; transition: .25s;}
       /* #logo a img:hover { width: 140px;} */
-      .content-t {width: 100%; min-height: 100px; float:left; padding: 20px 0px;  margin-top: 30px;}
+      .content-t {width: 100%; min-height: 100px; float:left; padding: 20px 30px; box-sizing: border-box;}
       .content-t h1{font-size:30px; color: #525252; text-align: left; line-height: auto; padding: 0px 0px 0px 0px ;}
       .content-t p {font-size: 18px; color: #525252; text-align: justify; line-height: 30px; padding: 0px 5px 0px 5px ; margin-top: 50px;}
+      .content-t .construction {width: 70%; min-height: 100px; background-color: #414042 ; border-radius: 15px; margin: auto; padding: 30px;}
+      .content-t .construction p {color: #fef6ef ; text-align: center; font-size: 20px; line-height: 30px;}
+      .content-t .construction i {margin-left: 42%;}
+      .content-t .construction:hover {box-shadow: 0px 5px 5px 5px rgb(110,181,202,.5);}
 
 } 
 
@@ -211,9 +224,13 @@
                   animation-name: header-profile-2; animation-duration: 2s;}
 
     
-    .content-ts {text-align: center; width: 100%;}
-    .content-ts h1{font-size:40px; color: #525252;}
+    .content-ts {width: 100%; padding: 20px 30px; box-sizing: border-box;}
+    .content-ts h1{font-size:40px;  color: #525252;}
     .content-ts p {font-size: 18px; color: #525252; text-align: justify; line-height: 30px; padding: 0px 5px 0px 5px ; margin-top: 50px;}
+    .content-ts .construction {width: 70%; min-height: 100px; background-color: #414042 ; border-radius: 15px; margin: auto; padding: 30px;}
+    .content-ts .construction p {color: #fef6ef ; text-align: center; font-size: 30px; line-height: 40px;}
+    .content-ts .construction i {margin-left: 45%;}
+    .content-ts .construction:hover {box-shadow: 0px 5px 5px 5px rgb(110,181,202,.5);}
 
     .navsm {display: none;}
     #btn-menu {display: none;}
@@ -247,9 +264,16 @@
     .right-d #front {width: 700px; position: absolute;left: -150px; 
                   animation-name: header-profile-2; animation-duration: 2s;}
 
-    .content-d {text-align: center; width: 100%;}
+    .content-d {width: 100%;padding: 20px 150px; box-sizing: border-box;}
     .content-d h1{font-size:50px; color: #525252;}
     .content-d p {font-size: 20px; color: #525252; text-align: justify; line-height: 30px; padding: 0px 5px 0px 5px ; margin-top: 50px;}
+    .content-d .construction {width: 70%; min-height: 100px; background-color: #414042 ; border-radius: 15px; margin: auto; padding: 30px; box-sizing: border-box;}
+    .content-d .construction p {color: #fef6ef ; text-align: justify; font-size: 25px; line-height: 40px;}
+    .content-d .construction i {margin-left: 45%;}
+    
+    .content-d .construction:hover {box-shadow: 0px 5px 5px 5px rgb(110,181,202,.5);}
+
+    
 
     .nav-display {display: block;}
     .navsm {display: none;}

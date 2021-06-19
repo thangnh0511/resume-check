@@ -100,6 +100,7 @@
 
     .content-sm {width: 100%; min-height: 100px; float:left; padding: 20px 0px;  margin-top: 30px;}
     .content-sm h1{font-size:30px; color: #525252; text-align: left; line-height: auto; padding: 0px 0px 0px 0px ;}
+    .content-sm p {font-size: 18px; color: #525252; text-align: left; line-height: 25px; padding: 0px 5px 0px 5px ; margin-top: 40px;}
     
 } 
 
@@ -123,10 +124,12 @@
 
     .content-m {width: 100%; min-height: 100px; float:left; padding: 20px 0px;  margin-top: 30px;}
     .content-m h1{font-size:30px; color: #525252; text-align: left; line-height: auto; padding: 0px 0px 0px 0px ;}
+    .content-m p {font-size: 18px; color: #525252; text-align: left; line-height: 25px; padding: 0px 5px 0px 5px ; margin-top: 40px;}
 
     .nav-display {display: none;}
     .navsm {display: block;}
 } 
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -173,6 +176,7 @@
       /* #logo a img:hover { width: 140px;} */
       .content-t {width: 100%; min-height: 100px; float:left; padding: 20px 0px;  margin-top: 30px;}
       .content-t h1{font-size:30px; color: #525252; text-align: left; line-height: auto; padding: 0px 0px 0px 0px ;}
+      .content-t p {font-size: 18px; color: #525252; text-align: justify; line-height: 30px; padding: 0px 5px 0px 5px ; margin-top: 50px;}
 
 } 
 
@@ -193,7 +197,7 @@
 
 
     .left-ts {width: 49%; min-height: 100px; float:left; padding: 20px 30px;  margin-top: 100px;}
-    .left-ts h1 {font-size:30px; color: #525252; text-align: justify; line-height: 10px; padding: 0px 5px 0px 5px ;}
+    .left-ts h1 {font-size:40px; color: #525252; text-align: justify; line-height: 10px; padding: 0px 5px 0px 5px ;}
     .left-ts p {font-size: 18px; color: #525252; text-align: justify; line-height: 30px; padding: 0px 5px 0px 5px ; margin-top: 50px;}
 
     .about-me-btn {width: 100px; height: 50px; border-radius: 5px; background-color: rgba(82, 82, 82, 1); margin: auto; color: #fef6ef; font-weight: bolder; border-style: none; margin-top: 40px;}
@@ -208,7 +212,8 @@
 
     
     .content-ts {text-align: center; width: 100%;}
-    .content-ts h1{font-size:50px; color: #525252;}
+    .content-ts h1{font-size:40px; color: #525252;}
+    .content-ts p {font-size: 18px; color: #525252; text-align: justify; line-height: 30px; padding: 0px 5px 0px 5px ; margin-top: 50px;}
 
     .navsm {display: none;}
     #btn-menu {display: none;}
@@ -244,6 +249,7 @@
 
     .content-d {text-align: center; width: 100%;}
     .content-d h1{font-size:50px; color: #525252;}
+    .content-d p {font-size: 20px; color: #525252; text-align: justify; line-height: 30px; padding: 0px 5px 0px 5px ; margin-top: 50px;}
 
     .nav-display {display: block;}
     .navsm {display: none;}

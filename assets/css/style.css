@@ -4,148 +4,95 @@
 .color-4 {color:#b8d8e0}
 .color-5 {color:#525252}
 
-/* #all-page {width: 100%; min-height: 400px; background-color: #fef6ef;} */
+#all { width: 100%; height:100%;background-color: #fef6ef; box-sizing: border-box; padding:20px; z-index: -1;}
 
-body {background-color: #fef6ef;}
+/* -----HEADER------ */
 
-/* ------------ AMINATION --------------- */
-@keyframes header-profile-1 {
-    0% {left: 0px;}
-    100% {left: -150px;}
+header { width: 100%; height: 60px; background-color: #b8d8e0; position: fixed; top: 0; left: 0; box-shadow: 0px -10px 40px -10px #525252; z-index: 1;}
+
+header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#logo {height: 60px; position: fixed; top: 13.5px; left: 20px;}
+#logo a img {width: 120px; float: left;}
+
+/* -----Navigate-mobile----- */
+#nav-mobile-button {float: right;}
+#nav-mobile-button img{width: 40px; position: fixed; top: 11px; right: 20px;}
+/* #background-nav{position: fixed;top: 0;bottom: 0;left: 0;right: 0; background-color: rgba(0,0,0,.3);} */
+.nav-mobile {background-color: #b8d8e0; position: fixed; width: 100%;top: 0; right: 0;bottom: 0; transform: translateX(100%); opacity:0;transition: transform linear 0.15s, opacity linear .15s;}
+.mobile-close img {position: absolute; width: 30px; top: 25px; left: 10%;}
+.nav-mobile ul {margin-top: 70px;}
+.nav-mobile ul li {padding-bottom: 20px; padding-left:30%;padding-top: 20px;font-size: 25px; text-align: left; font-weight: bold; width: 100%;}
+.nav-mobile ul li:hover {background-color: #6eb5ca; } 
+.nav-icon {width: 30px; position: fixed; left: 10%; }
+
+
+#nav-btn:checked ~ .nav-overlay {position: fixed;top: 0;bottom: 0;left: 0;right: 0; background-color: rgba(0,0,0,.3); animation: fade-in linear .2s;}
+#nav-btn:checked ~ .mobile-close{display: none;}
+#nav-btn:checked ~ .nav-mobile{transform: translateX(0%); opacity: 1;}
+#nav-btn:checked ~ .nav-list a{display: none;}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
-@keyframes header-profile-2 {
-  0% {left: -300px;}
-  100% {left: -150px;}
+@keyframes nav-ease-in {
+  from {transform: -100%;}
+  to {transform: 0%;}
 }
 
-/* ------------ END AMINATION ----------- */
 
-/* #document {width: 100%; height: 100%;}
-#opps{width: 500px; height: 500px; margin: auto;margin-top: 200px; color:#6EB5CA; text-align: center; }
-#opps img { width: 400px;} */
-
-.display-on {display: block;}
-.display-off { display: none;}
-
-/* ----------Resume - button --------------- */
-
-#resume-btn {width: 100px; height: 40px; font-size: 16px; font-weight: bold ;line-height: 40px;color:#fef6ef; background-color: #414042; text-align: center; border-top-left-radius: 10px; border-bottom-left-radius: 10px; position: fixed; top: 5px; right: 0; z-index: 2; transition: .25s;}
-
-#resume-btn:hover {width: 150px; cursor: pointer; background-color: #6eb5ca; color: #fef6ef}
-
-/* --------------- Content- area ----------- */
-
-.content-area {
-  width: 76.9%; 
-  min-height: 50px; 
-  margin: auto;}
-
-/* --------------- Header ------------------ */
-
-header{width: 100%; height: 50px;font-size: 100px; background: #b8d8e0; position: fixed; top: 0; box-sizing: border-box; z-index: 1;}
-
-#logo {width: 40px; position: absolute; margin-top: 7px; left: 20px;}
-#logo a img {width: 130px; float: left; transition: .25s;}
-/* #logo a img:hover { width: 140px;} */
-
-nav{width: 500px;height: 50px; margin: auto;} 
-
-
-/*---- Thẻ <a> ---- */
-/* nav a {padding: 0px 10px 0px 2px; color: #525252; position: relative;} */
-
-/* nav a:before {content: ""; position: absolute;background-color: #e74c3c;transition: .25s;}
-
-nav a:hover:before {width: 100%;} */
-
-/* ---- end thẻ <a> ---- */
-
-/* nav ul li:hover a {border-bottom: 5px solid #6eb5ca; width: 100%;} */
-
-nav ul li {width: 125px; height: 50px; line-height: 50px; text-align: center;float:left; font-size: 16px; font-weight: bold; transition: width 1s;}
-
-nav a {
-    font-size: 14px;
-    color: #525252;
-    position: relative;
-    padding: 0 10px 0 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  nav a:before, nav a:after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    border-bottom: 5px solid #f37239;
-    /* background-color: #f37239; */
-  }
-  nav a:before {
-    opacity: 0;
-    transform: translateY(-8px);
-    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
-  }
-  nav a:after {
-    opacity: 0;
-    transform: translateY(4px);
-    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
-  }
-  nav a:hover:before, nav a:hover:after, nav a:focus:before, nav a:focus:after {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  nav a:hover:before, nav a:focus:before {
-    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
-  }
-  nav a:hover:after, nav a:focus:after {
-    transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
-  }
-/* --------------- Container --------------- */
-
-#container {width: 100%; min-height: 160px; color: #525252;
-   background-color: #fef6ef; 
-   padding: 50px 20px 50px 0px;}
-
-section {width: 100%; min-height: 500px; font-size: 50px; background-color: #fef6ef; margin: auto; box-sizing: border-box; padding: 0px 0px;} 
-
-
-/* -----------Containter -> HELLO ------------ */
-.left {width: 49%; min-height: 100px; float:left; padding: 100px 0px; }
-.left h1 {font-size:50px; text-align: left; line-height: 30px; padding: 0px 0px 0px 150px}
-.left p {font-size: 18px; text-align: justify; line-height: 30px; padding: 0px 0px 0px 150px}
-.about-me-btn {width: 100px; height: 50px; border-radius: 5px; background-color: rgba(82, 82, 82, 1); margin: 50px 0px 0px 150px; color: #fef6ef; font-weight: bolder; border-style: none;}
-.about-me-btn:hover {background-color: #6eb5ca; color: #fef6ef}
-
-
-.right {width: 40%; min-height: 1000px; margin-left: 0.5em; float: right; position: relative;}
-.right #back {width: 600px; position: absolute;left: -150px; top: 0; z-index: 0;
-              animation-name: header-profile-1; animation-duration: 2s;}
-.right #front {width: 700px; position: absolute;left: -150px; 
-              animation-name: header-profile-2; animation-duration: 2s;}
+/* -----Navigate - Tablet & Desktop */
 
 
 
-/* ----------- Containter -> PROJECTS ------------ */
-
-article {width: 100%; height: 1000px;padding: 50px; font-size: 100px; background-color: #B8D8E0 ;} 
 
 
+/* -----CONTAINER------ */
 
-/* ----------------- FOOTER ---------------- */
+#container {width: 100%; min-height:100px;}
 
-footer {width: 100%; height: 30px; background-color: #414042 ; position: fixed; bottom: 0;}
-footer p{ font-size:30px;text-align: center; line-height: 30px;  font-size: 15px; color:#fef6ef ;}
+section {width: 100%; min-height: 100px; margin:50px 0px; z-index: inherit}
+
+#section-1::after {content: ""; clear: both; width: 0px; height: 0px; display: block;}
+
+.left {width: 100%; position: relative;}
+#img-back-ndisp{width: 100%; visibility: hidden; margin-bottom: 20px;}
+#img-back {width: 90%; position: absolute; left: -5%; animation-duration: 1s; animation-name: img-back;}
+#img-front {width: 105%; position: absolute; right: 0;animation-duration: 1s; animation-name: img-front;}
+.box-1 {width: 70%; height: 40%; background-color: #6eb5ca; position: absolute; bottom: 17%; right: 70%;animation-duration: 1s; animation-name: box-1;}
+.box-2 {width: 54%; height: 40%; background-color: #6eb5ca; position: absolute; top: 10%; left: 50%;animation-duration: 2s; animation-name: box-2;}
+
+@keyframes img-back {
+  0%{left: 30%;}
+  100% {left: -5%;}
+}
+@keyframes img-front {
+  0%{right: 30%;}
+  100% {right: 0%;}
+}
+@keyframes box-1 {
+  0%{right:-100%}
+  100%{right: 70%;}
+}
+@keyframes box-2 {
+  0%{left:-100%}
+  100%{left: 50%;}
+}
+
+.right {width: 100%;}
+#hello-h1-1 {font-size: 35px; margin: 0px;}
+#hello-h1-2 {font-size: 35px; margin: 10px 0px 20px 0px;}
+.text-block {font-size: 20px; text-align: left;margin-bottom: 10px;}
 
 
-/* ----------------- CONTENT ---------------------- */
 
-/* .construction {width: 70%; min-height: 100px; background-color: #414042 ; border-radius: 15px; margin: auto; padding: 30px;}
-.construction i {margin-left: 45%;} */
 
-/* ------- ADDITION CSS -------- */
 
-.margin-15 {margin: 15px;}
-
+/* ------FOOTER ---------- */
+footer {width: 100%; height: 60px; background-color: #fef6ef; margin: auto;}
+.footer-area p {text-align: center;}

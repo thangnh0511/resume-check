@@ -12,12 +12,30 @@
 
 /* Tablet - chiều dọc */
 @media  screen and (min-width:600px) {
-    
+    #nav-mobile-button img {}
+    .nav-mobile {width: 50%;}
+    .mobile-close img {left: 80%;}
+    .nav-mobile ul { margin-top: 80px; border-top: 1px solid rgba(1, 1, 1, .4);}
+
+
+    .left {width: 40%; float: right;}
+    .box-1 {display: none;}
+    .box-2 {display: none;}
+
+    .right {width: 60%; float: left; padding: 10% 0% 10% 5%;}
+    #hello-h1-1, #hello-h1-2 {font-size: 47px;}
+    .des {width: 100%; float: left;}
+    section {box-sizing: border-box; padding: 20px;}
+    .mobile {display: none;}
+    .tablet {display: none;}
 }
 
 /* Tablet - chiều ngang */
 @media  screen and (min-width:800px) {
-    
+    #nav-mobile-button img {}
+    .nav-mobile {width: 40%;}
+    .mobile-close img {}
+
 }
 
 /* Tablet to - dọc */

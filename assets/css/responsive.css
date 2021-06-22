@@ -28,27 +28,51 @@
     section {box-sizing: border-box; padding: 20px;}
     .mobile {display: none;}
     .tablet {display: none;}
+
 }
 
 /* Tablet - chiều ngang */
 @media  screen and (min-width:800px) {
+    
     #nav-mobile-button img {}
     .nav-mobile {width: 40%;}
     .mobile-close img {}
-
+    #logo{left: 8%;}
+    nav {display: block;}
 }
 
 /* Tablet to - dọc */
-@media  screen and (min-width:768px) {
+@media  screen and (min-width:769px) {
+    #nav-mobile-button {display: none;}
+    .box-2{display: block;top: 50%;z-index: 1;}
     
 }
 
 /* Tablet to - ngang */
-@media  screen and (min-width:1024px) {
-    
+@media  screen and (min-width:1024px) and (min-height:1366px) {
+    nav ul {margin-left: 23%;}
+    .box-2{display: block;top: 50%;z-index: 1;}
 }
 
 /* Desktop */
 @media  screen and (min-width:1025px) {
-    
+    .box-2{display: block;top: 50%;z-index: 1;}
+    .left {width: 50%; position: relative; box-sizing: border-box;}
+    #img-back-ndisp{width: 60%; visibility: hidden; margin-bottom: 20px;}
+    #img-back {width: 60%; position: absolute; left: 10%; animation-duration: 1s; animation-name: img-back-des;}
+    #img-front {width: 65%; position: absolute; right: 24%;animation-duration: 1s; animation-name: img-front-des;}
+    .box-2{display: block;top: 70%;}
+    @keyframes img-back-des {
+        0%{left: 30%;}
+        100% {left: 10%;}
+      }
+    @keyframes img-front-des {
+        0%{right: 30%;}
+        100% {right: 24%;}
+      }
+
+    .right {width: 50%;}
+    #hello-h1-1 {font-size: 35px; margin: 0px; padding-left: 15%;}
+    #hello-h1-2 {font-size: 35px; margin: 10px 0px 20px 0px;padding-left: 15%; padding-bottom: 30px;}
+    .text-block {font-size: 20px; text-align: left;margin-bottom: 10px;padding-left: 15%;}
 }

@@ -16,7 +16,7 @@
 html,body,div,ul,ol,li,a,img,span,p,b,input,label {
 	color: #6fffe9;
 }
-
+body{ height: 100%;background-color: #0b132b; }
 
 #all { width: 100%; height:100%;background-color: #0b132b; box-sizing: border-box; padding:20px; z-index: -1;}
 

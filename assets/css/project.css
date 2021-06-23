@@ -8,9 +8,9 @@
 
 /* --------Mobile-section------ */
 .timeline {width: 100%; min-height: 100px; position: relative;margin: 50px auto; padding: 40px 0; box-sizing: border-box;}
-.timeline::before {content: ""; width: 4px; height: 93%; background-color: #3a506b; position: absolute; left: 7.5%;}
+.timeline::before {content: ""; width: 4px; height: 93%; background-color: #3a506b; position: absolute; left: 27px;}
 
-.time-flow {width: 70px; height: 30px ;position: relative; left: -32%; background-color: #6fffe9;border-radius: 15px;}
+.time-flow {width: 70px; height: 30px ;position: relative; left: -80px; background-color: #6fffe9;border-radius: 15px;}
 .time-flow::before {content: "";background-color: #5bc0be; width: 70px; height: 40px; }
 .time-flow h3 {margin: 0; text-align: center; color: #1c2541; line-height: 30px; font-size: 12px;  }
 

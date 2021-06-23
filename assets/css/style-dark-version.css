@@ -118,7 +118,7 @@ a.button.six:hover:after{
 }
 
 /* Resume button - Desktop */
-#resume-btn {width: 10%; height: 35px; background-color: #6fffe9; position: fixed; right: 0; top: 12px; border-bottom-left-radius: 15px; border-top-left-radius: 15px; text-align: center;}
+#resume-btn {width: 10%; height: 35px; background-color: #6fffe9; position: fixed; right: 0; top: 12px; border-bottom-left-radius: 15px; border-top-left-radius: 15px; text-align: center; display: none;}
 #resume-btn p{color: #3a506b; line-height: 35px; font-size: 20px; font-weight:900;}
 
 #resume-btn:hover {cursor: pointer; background-color:#5bc0be;}

@@ -44,6 +44,7 @@
 /* Tablet to - dọc */
 @media  screen and (min-width:769px) {
     #nav-mobile-button {display: none;}
+    #resume-btn {display: block;}
     .box-2{display: block;top: 50%;z-index: 1;}
     
 }

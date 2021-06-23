@@ -8,16 +8,19 @@
 
 /* --------Mobile-section------ */
 .timeline {width: 100%; min-height: 100px; position: relative;margin: 50px auto; padding: 40px 0; box-sizing: border-box;}
-.timeline::before {content: ""; width: 4px; height: 93%; background-color: #3a506b; position: absolute; left: 27px;}
+.timeline::before {content: ""; width: 4px; height: 93%; background-color: #3a506b; position: absolute; right:90%;}
 
 .time-flow {width: 70px; height: 30px ;position: relative; left: -80px; background-color: #6fffe9;border-radius: 15px;}
-.time-flow::before {content: "";background-color: #5bc0be; width: 70px; height: 40px; }
+/* .time-flow::before {content: "";background-color: #5bc0be; width: 70px; height: 40px; } */
 .time-flow h3 {margin: 0; text-align: center; color: #1c2541; line-height: 30px; font-size: 12px;  }
+.time-flow:hover {cursor: pointer; background-color:#5bc0be; -ms-transform: scale(1.2,1.2);-webkit-transform: scale(1.2,1.2);transform: scale(1.2,1.2); ;}
+
 
 .timeline::after {content: ""; clear: both; display: block;}
 
 
 /* .period::before {content: ""; width: 4px; height: 93%; background-color: #3a506b; position: absolute; left: -3%;} */
+
 
 .timeline ul {margin: 0; padding: 0;}
 
@@ -25,3 +28,7 @@
 /* .timeline ul li::after{content: ""; clear: both; display: table;} */
 
 .timeline h1, p{margin: 0; margin-bottom: 20px;}
+
+.thoi-gian {
+    margin-bottom: 30px;
+}

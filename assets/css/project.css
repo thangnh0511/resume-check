@@ -7,7 +7,7 @@
 
 
 /* --------Mobile-section------ */
-.timeline {width: 100%; min-height: 100px; position: relative;margin: 50px auto; padding: 40px 0; box-sizing: border-box;}
+.timeline {width: 100%; min-height: 100px; position: relative;margin: 30px auto; padding: 40px 0; box-sizing: border-box;}
 .timeline::before {content: ""; width: 4px; height: 93%; background-color: #3a506b; position: absolute; right:90%;}
 
 .time-flow {width: 70px; height: 30px ;position: relative; left: -80px; background-color: #6fffe9;border-radius: 15px;}

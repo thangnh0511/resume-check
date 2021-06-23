@@ -1,8 +1,22 @@
+[class*="col-"]{
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row {box-sizing: border-box;}
 
 /* Điện thoại chiều dọc */
 @media  screen and (min-width:320px) {
-    
+    .col-30p-mobile{width: 30%;}
+    .col-70p-mobile {width: 70%;}
+    .col-100p-mobile {width: 100%;}
+    .col-100p-mobile img {width: 50px; display: inline-block;}    
 }
 
 /* Điện thoại chiều ngang */
@@ -11,7 +25,12 @@
 }
 
 /* Tablet - chiều dọc */
-@media  screen and (min-width:600px) {
+@media  screen and (min-width:601px) {
+    .col-30p-desktop {width: 30%; }
+    .col-70p-desktop {width: 70%;}
+    .col-100p-desktop {width: 100%;}
+    .col-100p-desktop img {width: 50px; display: inline-block;}    
+
     #nav-mobile-button img {}
     .nav-mobile {width: 50%;}
     .mobile-close img {left: 80%;}
@@ -29,6 +48,11 @@
     .mobile {display: none;}
     .tablet {display: none;}
 
+
+    /* ----Project-part---- */
+    .text {padding: 50px 15% 0% 15%;}
+    .text h1{font-size: 50px;}
+    .timeline {width: 70%;}
 }
 
 /* Tablet - chiều ngang */
